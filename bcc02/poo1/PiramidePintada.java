@@ -16,8 +16,11 @@ public class PiramidePintada {
 		System.out.println("|Tipo 2: R$258,98  |");
 		System.out.println("|Tipo 3: R$344,34  |");
 		System.out.println("+------------------+");
-		System.out.print("Tipo de tinta: ");
-		int tipoDeTinta = input.nextInt();
+		int tipoDeTinta;
+		do {
+			System.out.print("Tipo de tinta: ");
+			tipoDeTinta = input.nextInt();
+		}while(tipoDeTinta>3 || tipoDeTinta<1);
 		
 		double al = Math.sqrt((h*h)+(ab*ab));
 		//base do triângulo = 2 apótema da base 
