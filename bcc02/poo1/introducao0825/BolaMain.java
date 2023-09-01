@@ -15,6 +15,11 @@ public class BolaMain {
 
         bola1.setPeso(10);
         bola1.setTamanho(50);
-        bola1.setTipo("Volei");
+        bola1.setEsporte("Volei");
+
+        Bola bola2 = new Bola(10, 5.2f, "Handbol");
+
+        System.out.println(bola1.toString());
+        System.out.println(bola2.toString());
     }
 }
