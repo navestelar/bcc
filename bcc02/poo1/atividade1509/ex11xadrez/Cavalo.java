@@ -4,7 +4,13 @@ public class Cavalo extends Peca {
 
     public Cavalo(int linha, int coluna, boolean cor, int movimentos) {
         super(linha, coluna, cor, movimentos);
-        //TODO Auto-generated constructor stub
+    }
+
+    public boolean mover(int coluna, int linha) {
+        if (((((this.getColuna()-coluna)==1)||(this.getColuna()-coluna)==-1)&&((this.getColuna()-coluna)==2)||(this.getColuna()-coluna)==-2)||((((this.getColuna()-coluna)==2)||(this.getColuna()-coluna)==-2)&&((this.getColuna()-coluna)==1)||(this.getColuna()-coluna)==-1)) {
+            return true;
+        }
+        return false;
     }
 
     @Override

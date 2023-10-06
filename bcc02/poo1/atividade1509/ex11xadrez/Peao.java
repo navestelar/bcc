@@ -9,7 +9,6 @@ public class Peao extends Peca {
 
     public Peao(int linha, int coluna, boolean cor, int movimentos) {
         super(linha, coluna, cor, movimentos);
-        //TODO Auto-generated constructor stub
     }
 
     @Override
